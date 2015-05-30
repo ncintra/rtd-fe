@@ -1,0 +1,9 @@
+{
+    "name" : "RTD-FE",
+    "version" : "0.0.1",
+    "dependencies" : {
+        "mithril" : "0.2.x",
+        "polythene" : "0.0.x",
+        "systemjs" : "0.x"
+    }
+}
