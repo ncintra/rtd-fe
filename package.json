@@ -1,9 +1,22 @@
 {
     "name" : "RTD-FE",
     "version" : "0.0.1",
-    "dependencies" : {
-        "mithril" : "0.2.x",
-        "polythene" : "0.0.x",
-        "systemjs" : "0.x"
+    "devDependencies": {
+        "watch": "latest",
+        "live-reload": "latest",
+        "http-server": "latest",
+        "opener": "latest",
+        "parallelshell": "latest"
+    },
+    "dependencies": {
+        "mithril" : "latest",
+        "polythene" : "latest",
+        "systemjs" : "latest"
+    },
+    "scripts": {
+        "open:dev": "opener http://localhost:2015",
+        "serve": "http-server -p 2015 app/",
+        "livereload": "live-reload --port 2016 app/",
+        "dev": "npm run open:dev -s & parallelshell \"npm run live-reload -s\" \"npm run serve -s\""
     }
 }
