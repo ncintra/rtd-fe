@@ -14,9 +14,9 @@
         "systemjs" : "latest"
     },
     "scripts": {
-        "open:dev": "opener http://localhost:2015",
-        "serve": "http-server -p 2015 app/",
-        "livereload": "live-reload --port 2016 app/",
+        "open:dev": "opener http://localhost:9090",
+        "serve": "http-server -p 9090 app/",
+        "live-reload": "live-reload --port 9091 app/",
         "dev": "npm run open:dev -s & parallelshell \"npm run live-reload -s\" \"npm run serve -s\""
     }
 }
