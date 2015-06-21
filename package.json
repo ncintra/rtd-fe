@@ -6,7 +6,8 @@
         "live-reload": "latest",
         "http-server": "latest",
         "opener": "latest",
-        "parallelshell": "latest"
+        "parallelshell": "latest",
+        "jade": "latest"
     },
     "dependencies": {
         "mithril" : "latest",
@@ -14,9 +15,11 @@
         "systemjs" : "latest"
     },
     "scripts": {
+        "buildMarkup:dev": "jade app/index.jade --obj \"{\"devEnv\": true}\" -o dist",
+        "buildMarkup:test": "jade app/index.jade --obj \"{\"devEnv\": false}\" -o dist",
         "open:dev": "opener http://localhost:9090",
-        "serve": "http-server -p 9090 app/",
-        "live-reload": "live-reload --port 9091 app/",
-        "dev": "npm run open:dev -s & parallelshell \"npm run live-reload -s\" \"npm run serve -s\""
+        "serve": "http-server -p 9090 dist/",
+        "live-reload": "live-reload --port 9091 dist/",
+        "dev": "npm run open:dev -s & parallelshell \"npm run live-reload -s\" \"npm run serve -s \" \" npm run buildMarkup:dev -s\""
     }
 }
