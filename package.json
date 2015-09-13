@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "rtd",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ncintra/rtd-fe.git"
@@ -16,8 +13,10 @@
     "url": "https://github.com/ncintra/rtd-fe/issues"
   },
   "homepage": "https://github.com/ncintra/rtd-fe#readme",
-  "scripts" :
-  { 
-    "push" : "git add -A && git commit -m \"automated git push\" && git push origin master"  
+  "scripts": {
+    "push": "git add -A && git commit -m \"automated git push\" && git push origin master"
+  },
+  "devDependencies": {
+    "maquette": "^2.1.0"
   }
 }
