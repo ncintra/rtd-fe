@@ -1,0 +1,46 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/nelson/.nvm/versions/node/v4.0.0/bin/node',
+1 verbose cli   '/home/nelson/.nvm/versions/node/v4.0.0/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'push' ]
+2 info using npm@3.3.2
+3 info using node@v4.0.0
+4 verbose run-script [ 'prepush', 'push', 'postpush' ]
+5 info lifecycle rtd@0.0.1~prepush: rtd@0.0.1
+6 silly lifecycle rtd@0.0.1~prepush: no script for prepush, continuing
+7 info lifecycle rtd@0.0.1~push: rtd@0.0.1
+8 verbose lifecycle rtd@0.0.1~push: unsafe-perm in lifecycle true
+9 verbose lifecycle rtd@0.0.1~push: PATH: /home/nelson/.nvm/versions/node/v4.0.0/lib/node_modules/npm/bin/node-gyp-bin:/home/nelson/work/rtd-fe/node_modules/.bin:/home/nelson/.nvm/versions/node/v4.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+10 verbose lifecycle rtd@0.0.1~push: CWD: /home/nelson/work/rtd-fe
+11 silly lifecycle rtd@0.0.1~push: Args: [ '-c',
+11 silly lifecycle   'git add -A && git commit -m "automated git push" && git push origin master' ]
+12 silly lifecycle rtd@0.0.1~push: Returned: code: 128  signal: null
+13 info lifecycle rtd@0.0.1~push: Failed to exec push script
+14 verbose stack Error: rtd@0.0.1 push: `git add -A && git commit -m "automated git push" && git push origin master`
+14 verbose stack Exit status 128
+14 verbose stack     at EventEmitter.<anonymous> (/home/nelson/.nvm/versions/node/v4.0.0/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (/home/nelson/.nvm/versions/node/v4.0.0/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at ChildProcess.emit (events.js:172:7)
+14 verbose stack     at maybeClose (internal/child_process.js:817:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid rtd@0.0.1
+16 verbose cwd /home/nelson/work/rtd-fe
+17 error Linux 3.16.0-49-generic
+18 error argv "/home/nelson/.nvm/versions/node/v4.0.0/bin/node" "/home/nelson/.nvm/versions/node/v4.0.0/bin/npm" "run" "push"
+19 error node v4.0.0
+20 error npm  v3.3.2
+21 error code ELIFECYCLE
+22 error rtd@0.0.1 push: `git add -A && git commit -m "automated git push" && git push origin master`
+22 error Exit status 128
+23 error Failed at the rtd@0.0.1 push script 'git add -A && git commit -m "automated git push" && git push origin master'.
+23 error This is most likely a problem with the rtd package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     git add -A && git commit -m "automated git push" && git push origin master
+23 error You can get their info via:
+23 error     npm owner ls rtd
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
